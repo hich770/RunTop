@@ -4,37 +4,36 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class ObjectReturnToPool : MonoBehaviour, IPooledObject
 {
-    [SerializeField] private float lifeTime = 10f; 
-    [SerializeField] private float minDistanceToDisable = 50f; 
-    [SerializeField] private string finishTag = "EndWall";
+    [SerializeField] private float _minDistanceToDisable = 50f; 
+    [SerializeField] private string _finishTag = "EndWall";
 
-    private Transform playerTransform;
-    private Rigidbody rb;
+    private Transform _playerTransform;
+    private Rigidbody _rigidbody;
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody>();
+        _rigidbody = GetComponent<Rigidbody>();
         
         if (GameObject.FindGameObjectWithTag("Player") != null)
         {
-            playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+            _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         }
     }
 
     public void OnObjectSpawn()
     {
-        if (rb != null)
+        if (_rigidbody != null)
         {
-            rb.linearVelocity = Vector3.zero;
-            rb.angularVelocity = Vector3.zero;
+            _rigidbody.linearVelocity = Vector3.zero;
+            _rigidbody.angularVelocity = Vector3.zero;
         }
     }
 
     private void Update()
     {
 
-        if (playerTransform != null && 
-            Vector3.Distance(transform.position, playerTransform.position) > minDistanceToDisable)
+        if (_playerTransform != null && 
+            Vector3.Distance(transform.position, _playerTransform.position) > _minDistanceToDisable)
         {
             ReturnToPool();
         }
@@ -47,7 +46,7 @@ public class ObjectReturnToPool : MonoBehaviour, IPooledObject
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag(finishTag))
+        if (collision.gameObject.CompareTag(_finishTag))
         {
             ReturnToPool();
         }
@@ -55,7 +54,7 @@ public class ObjectReturnToPool : MonoBehaviour, IPooledObject
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag(finishTag))
+        if (other.CompareTag(_finishTag))
         {
             ReturnToPool();
         }

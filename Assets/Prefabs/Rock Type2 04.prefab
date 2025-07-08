@@ -184,5 +184,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a0d4cf28a9f4b70844558b608e30a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 10
-  minDistanceToDisable: 235.4
+  _minDistanceToDisable: 700
+  _finishTag: EndWall

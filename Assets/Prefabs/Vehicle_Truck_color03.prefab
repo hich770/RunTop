@@ -164,9 +164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a0d4cf28a9f4b70844558b608e30a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 10
-  minDistanceToDisable: 235
-  finishTag: EndWall
+  _minDistanceToDisable: 700
+  _finishTag: EndWall
 --- !u!65 &-2106107608360583562
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -200,9 +199,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44957d2004ccd4c4ab888882ea85672d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitClips:
+  _hitClips:
   - {fileID: 8300000, guid: f150c6dd104a292499d27a4bd9322539, type: 3}
   - {fileID: 8300000, guid: 1f423c9ff21a3864b875e0c2af2f919a, type: 3}
   - {fileID: 8300000, guid: e896df559c4accb4792918d8dd69999a, type: 3}
-  minVelocityToPlay: 2
-  maxDistanceToPlayer: 30
+  _minVelocityToPlay: 2
+  _maxDistanceToPlayer: 30
