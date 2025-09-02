@@ -1,0 +1,13 @@
+{
+    "asset": "03aece81a63577740809a3895bcf4378",
+    "fileName": "0198d748-799b-7176-9437-e302be2afae2.wav",
+    "prompt": "High quality sound effect of car tires skidding and drifting on dry asphalt, intense screeching rubber, realistic urban street racing atmosphere, similar to GTA 5 drift sounds, sharp friction noise with dynamic sliding.",
+    "negativePrompt": "",
+    "model": "0ee39b33-2893-4e0f-8c46-0e0bdd4eda85",
+    "modelName": "Text to Sound",
+    "customSeed": -1,
+    "w3CTraceId": "227284b378a4ab604404ccabd799998b",
+    "duration": 4.210000038146973,
+    "autoTrim": true,
+    "hasReference": false
+}

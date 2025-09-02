@@ -1,0 +1,13 @@
+{
+    "asset": "03aece81a63577740809a3895bcf4378",
+    "fileName": "0198d74d-82aa-7ece-842d-ef70aa33bc42.wav",
+    "prompt": "stone fell on the asphalt",
+    "negativePrompt": "",
+    "model": "0ee39b33-2893-4e0f-8c46-0e0bdd4eda85",
+    "modelName": "Text to Sound",
+    "customSeed": -1,
+    "w3CTraceId": "c9fdf53624587c1d28fd2baf262d41ad",
+    "duration": 1.0,
+    "autoTrim": true,
+    "hasReference": false
+}

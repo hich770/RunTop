@@ -1,0 +1,13 @@
+{
+    "asset": "03aece81a63577740809a3895bcf4378",
+    "fileName": "0198d74a-bbd0-7d88-965e-39e429488152.wav",
+    "prompt": "tire screech skid\r\n\r\nrubber friction asphalt\r\n\r\nhigh-speed drift\r\n\r\npower slide\r\n\r\ngritty textured\r\n\r\nsharp squeal\r\n\r\nlooping sound effect\r\n\r\ngranular synthesis",
+    "negativePrompt": "",
+    "model": "0ee39b33-2893-4e0f-8c46-0e0bdd4eda85",
+    "modelName": "Text to Sound",
+    "customSeed": -1,
+    "w3CTraceId": "4dd52e9405bf5b942a861c80a3b2c472",
+    "duration": 4.210000038146973,
+    "autoTrim": true,
+    "hasReference": false
+}

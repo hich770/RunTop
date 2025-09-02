@@ -1,0 +1,13 @@
+{
+    "asset": "03aece81a63577740809a3895bcf4378",
+    "fileName": "0198d74e-6463-7fff-a854-c012a6f94f9c.wav",
+    "prompt": "big stone fell on the asphalt",
+    "negativePrompt": "noise, distorted",
+    "model": "0ee39b33-2893-4e0f-8c46-0e0bdd4eda85",
+    "modelName": "Text to Sound",
+    "customSeed": -1,
+    "w3CTraceId": "5c382948c9d91f61662c09e665c9707a",
+    "duration": 1.0,
+    "autoTrim": true,
+    "hasReference": false
+}
